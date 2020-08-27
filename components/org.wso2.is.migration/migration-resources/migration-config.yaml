@@ -381,6 +381,14 @@ versions:
    -
      name: "EncryptionAdminFlowMigrator"
      order: 1
+     parameters:
+      currentEncryptionAlgorithm: "RSA/ECB/OAEPwithSHA1andMGF1Padding"
+      migratedEncryptionAlgorithm: "AES/GCM/NoPadding"
+      schema: "identity"
    -
      name: "EncryptionUserFlowMigrator"
      order: 2
+     parameters:
+      currentEncryptionAlgorithm: "RSA/ECB/OAEPwithSHA1andMGF1Padding"
+      migratedEncryptionAlgorithm: "AES/GCM/NoPadding"
+      schema: "identity"
